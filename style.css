@@ -1,0 +1,325 @@
+*{
+	padding: 0;
+	margin: 0px;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: Scriptina;
+	src: url(SCRIPTIN.ttf);
+  }
+/* nav */
+
+body {
+	margin: 0px;
+	font-family: 'segoe ui';
+  }
+
+  .nav {
+	height: 64px;
+	width: 100%;
+	background-color: #745DBA;
+	position: relative;
+  }
+
+  .nav > .nav-header {
+	display: inline;
+  }
+
+  .nav > .nav-header > .nav-title {
+	display: inline-block;
+	font-size: 22px;
+	color: #fff;
+	padding: 0px 0px 0px 20px;
+	font-family:Scriptina;
+  }
+
+  .nav > .nav-btn {
+	display: none;
+  }
+
+  .nav > .nav-links {
+	display: inline;
+	float: right;
+	font-size: 18px;
+	 padding: 9px;
+  }
+
+  .nav > .nav-links > a {
+	display: inline-block;
+	padding: 13px 10px 13px 10px;
+	text-decoration: none;
+	color: #efefef;
+  }
+
+  .nav > .nav-links > a:hover {
+	background-color:#D1C9E8;
+	color:black;
+  }
+
+  .nav > #nav-check {
+	display: none;
+  }
+  .cover{
+	text-align: center;
+	width:100%;
+  }
+  .coverim{
+   width:100%;
+  }
+
+.card {
+  		margin: 30px auto;
+		width: 300px;
+		height: 300px;
+		border: none;
+		border-radius: 40px;
+		/* box-shadow: 5px 5px 30px 7px rgb(0 0 0 / 25%), -5px -5px 30px 7px rgb(0 0 0 / 22%); */
+		cursor: pointer;
+		transition: 0.4s;
+  }
+
+  .card .card_image {
+	width: inherit;
+	height: inherit;
+	/* border-radius: 40px; */
+  }
+
+  .card .card_image img {
+	width: inherit;
+	height: inherit;
+	/* border-radius: 40px; */
+	object-fit: content;
+  }
+
+  .card .card_title {
+	text-align: center;
+	border-radius: 0px 0px 40px 40px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: -80px;
+	height: 40px;
+  }
+
+  .card:hover {
+	transform: scale(0.9, 0.9);
+	box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+	  -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  .card2 {
+	margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 40px;
+  /* box-shadow: 5px 5px 30px 7px rgb(0 0 0 / 25%), -5px -5px 30px 7px rgb(0 0 0 / 22%); */
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card2 .card_image {
+	width: inherit;
+	height: inherit;
+	/* border-radius: 40px; */
+  }
+
+  .card2 .card_image img {
+	width: inherit;
+	height: inherit;
+	/* border-radius: 40px; */
+	object-fit: content;
+  }
+
+  .card2 .card_title {
+	text-align: center;
+	border-radius: 0px 0px 40px 40px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: -80px;
+	height: 40px;
+  }
+ .topic1{
+  font-family:Scriptina;
+  text-align:center;
+  font-size:40px;
+  font-weight:bold;
+  color:#745DBA;
+ }
+ .para{
+	text-align:center;
+	font-size:25px;
+	font-weight:bold;
+ }
+
+/*start clients*/
+
+
+.clients{
+  background-color: #e8e4f4;
+height: 500px;
+}
+.clients-content{
+font-size: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+.client{
+justify-content: center;
+text-align: center;
+padding: 10px;
+width: calc(70%/3);
+height: 500px;
+}
+.client-title {
+text-align: center;
+padding: 100px 0px 50px 0px;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #e8e4f4;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #baaedd;
+  color: black;
+}
+.flip-card-front  h5{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: #baaedd;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back p{
+padding: 10px;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+/*end clients*/
+/*start gallary section*/
+.gallary{
+
+}
+.gallery .gallery-con
+{
+	display: flex;
+	align-content: stretch;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-bottom: -4px;
+	margin-top: 100px;
+
+}
+
+.gallery .imo{
+		flex-basis: 50%;
+}
+.gallery  .imo img{
+height: 310px;
+width: 100%;
+}
+/*end gallary*/
+  @media (max-width:600px) {
+
+	.nav > .nav-btn {
+	  display: inline-block;
+	  position: absolute;
+	  right: 0px;
+	  top: 0px;
+	}
+	.nav > .nav-btn > label {
+	  display: inline-block;
+	  width: 50px;
+	  height: 50px;
+	  padding: 13px;
+	}
+	.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+	  background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nav > .nav-btn > label > span {
+	  display: block;
+	  width: 25px;
+	  height: 10px;
+	  border-top: 2px solid #eee;
+	}
+	.nav > .nav-links {
+	  position: absolute;
+	  display: block;
+	  width: 100%;
+	  background-color: #745dba;
+	  height: 0px;
+	  transition: all 0.3s ease-in;
+	  overflow-y: hidden;
+	  top: 47px;
+	  left: 0px;
+	}
+	.nav > .nav-links > a {
+	  display: block;
+	  width: 100%;
+	}
+	.nav > #nav-check:not(:checked) ~ .nav-links {
+	  height: 0px;
+	}
+	.nav > #nav-check:checked ~ .nav-links {
+	  height: calc(100vh - 50px);
+	  overflow-y: auto;
+	}
+  }
+/* end nav */
+
+
+/* body */
+.makeflex{
+
+	z-index: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.f1{
+	flex:1;
+}
+/* end body */
